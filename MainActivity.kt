@@ -18,8 +18,15 @@ class MainActivity : AppCompatActivity() {
 
     fun swithToFirstFragment(){
         supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.container,firstFragment)
-                .commit()
+            .beginTransaction()
+            .replace(R.id.container,firstFragment)
+            .commit()
+    }
+
+    fun swithToSecondFragment(){
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.container,secondFragment)
+            .commit()
     }
 }

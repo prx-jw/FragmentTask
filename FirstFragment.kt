@@ -23,7 +23,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         super.onViewCreated(view, savedInstanceState)
          val button = view.findViewById<Button>(R.id.swithButton)
         button.setOnClickListener {
-            (requireActivity() as MainActivity)
+            (requireActivity() as MainActivity).swithToSecondFragment()
         }
     }
 
